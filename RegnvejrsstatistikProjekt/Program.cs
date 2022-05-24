@@ -1,4 +1,5 @@
-﻿Console.Write("Antal måleværdier: ");
+﻿using RegnvejrsstatistikProjekt;
+Console.Write("Antal måleværdier: ");
 int _antalMåleværdier;
 while (!int.TryParse(Console.ReadLine(), out _antalMåleværdier))
 {
@@ -16,3 +17,5 @@ for (int i = 0; i < _måleværdier.Length; i++)
         Console.Write("Indtast et tal: ");
     }
 }
+
+Menu.RegnMenu(_måleværdier);

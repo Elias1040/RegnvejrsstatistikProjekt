@@ -1,1 +1,1 @@
-RegnvejrsstatistikProjekt
+*RegnvejrsstatistikProjekt

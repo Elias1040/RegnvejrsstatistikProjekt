@@ -19,6 +19,7 @@ namespace RegnvejrsstatistikProjekt
                 switch (Console.ReadKey().KeyChar)
                 {
                     case '1':
+                        // Udskriver alle måleværdier i en tabel
                         Console.Clear();
                         for (int i = 0; i < måleværdier.Length; i++)
                         {
@@ -27,21 +28,25 @@ namespace RegnvejrsstatistikProjekt
                         Console.ReadKey();
                         break;
                     case '2':
+                        // Udskriver gennemsnittet i listen
                         Console.Clear();
                         Console.WriteLine($"Gennemsnit: {måleværdier.Average()}");
                         Console.ReadKey();
                         break;
                     case '3':
+                        // Udskriver max-værdien i listen
                         Console.Clear();
                         Console.WriteLine($"Max-værdi: {måleværdier.Max()}");
                         Console.ReadKey();
                         break;
                     case '4':
+                        // Udskriver min-værdien i listen
                         Console.Clear();
                         Console.WriteLine($"Min-værdi: {måleværdier.Min()}");
                         Console.ReadKey();
                         break;
                     case '5':
+                        // Afslutter programmet
                         Console.Clear();
                         exit = true;
                         break;
